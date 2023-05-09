@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,700&display=swap");
+
+a.animated-button.thar-three {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: 2px solid #f7ca18;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+
+}
+a.animated-button:link,
+a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 0.08em;
+    text-shadow: 0 0 1px rgb(0 0 0 / 20%), 0 1px 0 rgb(0 0 0 / 20%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#Pixelby.Inicio {
+    background-image: url(/img/fondopixeby.png);
+    height: 100vh;
+    background-color: #12122a;
+  }
+#Pixelby .Personaje .Texto {
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    right: 7%;
+    top: 29%;
+    width: 32%;
+}
+#Pixelby .Personaje strong {
+    color: #51b05e;
+}
+
+#Pixelby .Personaje .Texto h1 {
+    font-weight: 700;
+    line-height: 1.1em;
+}
+#Pixelby .Personaje {
+    background-image: url(/img/fondo-personaje.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+}
+
+#Pixelby .controller {
+    position: absolute;
+    width: 277px;
+    margin: auto;
+    top: 7%;
+    left: 0;
+    right: 0;
+    -webkit-animation: bounce-down 1.6s linear infinite;
+    animation: bounce-down 1.6s linear infinite;
+}
+
+#Pixelby button a {
+    color: var(--colordos);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#Pixelby button {
+    color: var(--color);
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+#Pixelby button:hover,
+button:focus {
+    border-color: var(--hover);
+    color: #fff;
+}
+
+#Pixelby button {
+    background: none;
+    border: 2px solid;
+    border-right: 21px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+}
+#Pixelby .slide:hover,
+.slide:focus {
+    box-shadow: inset 10.5em 0 0 0 var(--hover);
+}
+#Pixelby .slide {
+    --color: #51b05e;
+    --hover: #51b05e;
+    --colordos: #fff;
+}
+
+@-webkit-keyframes bounce-down {
+    25% {
+        -webkit-transform: translateY(-4px);
+    }
+    50%,
+    100% {
+        -webkit-transform: translateY(0);
+    }
+    75% {
+        -webkit-transform: translateY(4px);
+    }
+}
+
+@keyframes bounce-down {
+    25% {
+        transform: translateY(-4px);
+    }
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(4px);
+    }
+}
